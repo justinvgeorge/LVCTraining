@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Live Classes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body onload="loading()">
+    <header style="background-image: url(./images/efe-kurnaz-RnCPiXixooY-unsplash.jpg); height: 70px; text-align: center;">
+        <canvas id="myCanvas" width="400" height="40" style="border:15px solid #d3d3d3; padding: 0  ;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+    </header>
+    
+    <nav style="background-color: black; padding: 3px; text-align: center;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a onclick="subscribe()" href="#">Subscribe</a></li>
+
+        </ul>
+    </nav>
+    <section>
+        <article style="text-align: center;">
+          <marquee behavior="" direction="">
+            <p style="font-size: 24pt;"><b>Welcome to my website!</b></p>
+          </marquee>
+        </article>
+        <article style="text-align: center;">
+            <video width="540" height="250" controls>
+                <source src="./assets/World's Most Advanced Smart Classroom Solution - Spark Products by eins.ai.mp4" type="video/mp4">
+              </video>
+        </article>
+    </section>
+    <section>
+      <article style="margin-left: auto; margin-right: auto; background-color: rgb(194, 255, 225);padding: 10px; ">
+        <table style="margin-left: auto; margin-right: auto; background-color: rgb(194, 255, 225);">
+          <tr>
+            <td>
+              Q1. What is the first letter of the alphabet?
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="r1" value="b">
+              <label for="">a. b</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="r1" value="c">
+              <label for="">b. c</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="r1" value="a">
+              <label for="">c. a</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Q2. What is the first number?
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="r2" value="2">
+              <label for="">1. 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="r2" value="3">
+              <label for="">2. 3</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="r2" value="1">
+              <label for="">3. 1</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button onclick="radioAnswer()" style="border: none; padding: 5px; border-radius: 14px; background-color: rgb(194, 255, 225); box-shadow:0 0 14px 2px rgb(152, 216, 184) ;">Submit</button>
+            </td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 400px; margin-left: auto; margin-right: auto;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/mean.png" class="d-block w-10" alt="...">
+
+          </div>
+          <div class="carousel-item">
+            <img src="./images/Mern.png" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/mean.png" class="d-block w-10" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+
+    <footer>
+        Designed and Developed by me
+    </footer>
+</body>
+
+<script>
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.font="30px Arial";
+    ctx.strokeText("Live Virtual Classes",70,30);
+    </script>
+
+</html>

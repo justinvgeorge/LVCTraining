@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Live Classes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/1.js"></script>
+</head>
+<body>
+    <header style="background-image: url(./images/efe-kurnaz-RnCPiXixooY-unsplash.jpg); height: 100px; text-align: center;">
+        <h1 style="padding-top:30px ;">Live Virtual Class</h1>
+    </header>
+    <nav style="background-color: black; padding: 3px; text-align: center;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+
+        </ul>
+    </nav>
+    <section>
+        <article style="text-align: center; margin: 14px;">
+            <marquee behavior="" direction="" onmouseover="this.stop()" onmouseout="this.start()">
+
+                <select onchange="coursePopUp()" id="popUpCourse" style="height:30px; width: 200px; border: 0; border-radius: 5px; background-color: aquamarine; text-align: center;" >
+                    <option id="mern" value="mern">MERN</option>
+                    <option value="mean">MEAN</option>
+                    <option value="mevn">MEVN</option>
+                    
+                </select>
+            </marquee>
+        </article>
+    </section>
+    <section style="padding: 20px;">
+        <article style="text-align: center;">
+            <a href="#"><img src="./images/Mern.png" alt="MERN"></a>
+            <a href="#"><img src="./images/Mern.png" alt="MEAN"></a>
+            <a href="index.html"><img src="./images/Mern.png" alt="MEVN"></a>
+
+        </article>
+    </section>
+    <section>
+            <table style="padding: 10px; margin-left: auto; margin-right: auto; height: 200px; width: 350px; background-color: white; box-shadow: 0 0 20px 7px #d1d1d1; border-radius: 15px;">
+               
+                <tr>
+                    <td style="padding: 20px;">Maths</td>
+                    <td><input id="maths" placeholder="Enter between 0-100" type="number" style=" background: transparent; border: none; border-bottom: 1px solid #000000; border-radius: 0;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px;">Science</td>
+                    <td><input id="science" placeholder="Enter between 0-100" type="number" style=" background: transparent; border: none; border-bottom: 1px solid #000000; border-radius: 0;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px">Computer Science</td>
+                    <td><input id="computer" placeholder="Enter between 0-100" type="number" style=" background: transparent; border: none; border-bottom: 1px solid #000000; border-radius: 0;"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="marks()">Calculate</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="result">0</label>
+                    </td>
+                    <td>
+                        <label id="percent"></label>
+                    </td>
+                </tr>
+
+            </table>
+    </section>
+    <footer>
+        Designed and Developed by me
+    </footer>
+</body>
+</html>
